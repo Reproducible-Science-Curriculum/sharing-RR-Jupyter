@@ -1,11 +1,17 @@
 ---
-title: "Sharing Jupyter Notebooks using Github"
+title: "Sharing Jupyter Notebooks using GitHub"
 teaching: 10
-exercises: 5
+exercises: 15
 questions:
-- "How can you use Github for sharing Jupyter notebooks online?"
+- "How can you use GitHub for sharing Jupyter notebooks online?"
 objectives:
+- "Create a repository on GitHub to share your Jupyter Notebook online."
+- "Describe the features GitHub provides that enhance its utility for online sharing."
+- "Describe GitHub's limitations for sharing Jupyter Notebooks."
 keypoints:
+- "GitHub is a development platform where we \"_can host and review code, manage projects, and build software._\""
+- "A GitHub repository can be created, populated, and shared without command line or other special-purpose version control tools."
+- "Jupyter Notebooks shared through GitHub are rendered, but are static. GitHub does not run the notebook(s) in a repository."
 ---
 # Sharing using GitHub
 
@@ -18,7 +24,7 @@ In this lesson we will learn:
 
 ## GitHub
 
-GitHub is a development platform where we "can host and review code, manage projects, and build software." GitHub hosts source code for 75+ million projects including the `pandas` package we have been using among many others. 
+GitHub is a development platform where we "_can host and review code, manage projects, and build software._" GitHub hosts source code for 75+ million projects including the `pandas` package we have been using among many others. 
 
 ### 1. Go to the GitHub Homepage
 
@@ -29,7 +35,7 @@ To use GitHub one needs to register for a (free) account. To register for a GitH
 
 We should see the the web page below.
 
-**Note**: If you already have a GitHub account you do NOT need to create a new one. Please skip down to step ????.
+**Note**: _If you already have a GitHub account you do __NOT__ need to create a new one. Please [skip down to step 3](#3-create-a-new-reprository)._
 
 ![github-homepage-new-user.png](../fig/github-homepage-new-user.png)
 
@@ -72,12 +78,13 @@ Click _Submit_ to complete our `Github` account setup.
 
 ![github-dashboard.png](../fig/github-dashboard.png)
 
-To create a new repository:
-
-- Add a repository name. We choose to name our repository `sharing-github`.
-- Personal GitHub accounts require that projects be _public_.
-- Check the _Initialize this repository with a README_ option.
-- Click the green _Create repository_ button.
+> ## Create a new repository:
+>
+> - Add a repository name. We choose to name our repository `sharing-github`.
+> - Personal GitHub accounts require that projects be _public_.
+> - Check the _Initialize this repository with a README_ option.
+> - Click the green _Create repository_ button.
+{: .challenge}
 
 ![github-new-repository-sharing-github.png](../fig/github-new-repository-sharing-github.png)
 
@@ -100,31 +107,29 @@ We will use GitHub's web interface to upload our files to our new repository.
 Before we upload one of our existing files, we will first create a new notebook with a "print('hello world')" `Python` statement in a single cell. 
 
 
-#### 4.1 Create a new sample notebook
-
-To acomplish this, please follow the step below:
-- At the Jupyter dashboard, click on _New_ button and select a `Python 3` notebook.
-- In the first cell of the notebok, type the `Python` atatement:
-
-        print('hello world')
-
-- Run the cell to confim that the `Python` statemnt does not have any bugs.
-- Save the notebook as "hello_world_binder.ipynb"
-
-#### 4.2 Upload the new sample notebook to our GitHub repository
+> ## 4.1 Create a new sample notebook
+> - At the Jupyter dashboard, click on _New_ button and select a `Python 3` notebook.
+> - In the first cell of the notebok, type the `Python` atatement:
+>
+>        print('hello world')
+>
+> - Run the cell to confim that the `Python` statemnt does not have any bugs.
+> - Save the notebook as "hello_world_binder.ipynb"
+{: .challenge}
 
 To add our new sample notebook to our GitHub repository, we will return to our repository's homepage at <https://github.com>.
 
-To upload our file:
-- Go to [GitHub](https://github.com) in our browser. We can click the link to the left.
-- Click on the `sharing-github` repository
-- Click on the _Upload file_ button
-- Drag and drop the sample notebook or click the _choose your files_ link to select the sample notebook.
-    - We will see any files that we have uploaded at the bottom of the drag and drop area.
-- Add a message describing the change we are about to make.
-    - Type "Added sample notebook" in the subject field. 
-    - We can either add the same message below in the extended dwscription or leave it blank.
-- Click on _Commit changes_ button to complete the uplaod.
+> ## 4.2 Upload the new sample notebook to our GitHub repository
+> - Go to [GitHub](https://github.com) in our browser. We can click the link to the left.
+> - Click on the `sharing-github` repository
+> - Click on the _Upload file_ button
+> - Drag and drop the sample notebook or click the _choose your files_ link to select the sample notebook.
+>    - We will see any files that we have uploaded at the bottom of the drag and drop area.
+> - Add a message describing the change we are about to make.
+>    - Type "Added sample notebook" in the subject field. 
+>    - We can either add the same message below in the extended dwscription or leave it blank.
+> - Click on _Commit changes_ button to complete the uplaod.
+{: .challenge}
 
 After commiting the change we should see that there are now two files in the repository: 1) the README and 2) the new sample notebook (as seen in the screenshot below).
 
@@ -138,25 +143,31 @@ We can actually preview the notebook by clicking on it (shown below)
 
 In anticipation of our next lesson on sharing using the capability of [Binder](https://mybinder.org), we need to upload the notebook that we have bene working on. To do this we will repeat many of the steps above.
 
-To upload our file:
-- Return to `sharing-github` repository on GitHub
-- Click on the _Upload file_ button
-- Drag and drop the data analysis notebook completed in the previous lesson or click the _choose your files_ link to select the notebook.
-    - We will see any files that _we_ have uploaded at the bottom of the drag and drop area.
-- Add a message describing the change we are about to make.
-    - Typing "Added data analysis notebook" in the subject field. 
-    - We can either add the same message below in the extended dwscription or leave it blank.
-- Click on _Commit changes_ button to complete the uplaod.
+> ## Upload our file:
+> - Return to `sharing-github` repository on GitHub
+> - Click on the _Upload file_ button
+> - Drag and drop the data analysis notebook completed in the previous lesson or click the _choose your files_ link to select the notebook.
+>    - We will see any files that _we_ have uploaded at the bottom of the drag and drop area.
+> - Add a message describing the change we are about to make.
+>    - Typing "Added data analysis notebook" in the subject field. 
+>    - We can either add the same message below in the extended dwscription or leave it blank.
+> - Click on _Commit changes_ button to complete the uplaod.
+>
+{: .challenge}
 
 After commiting the change we should see that there are now three files in the repository: 1) the README and 2) the sample notebook and 3) our new data analysis notebook.
 
-To learn more about GitHub you can review one or more of these additional (external) resouces:
-- GitHub Guide - [Hello World](https://guides.github.com/activities/hello-world/)
-- All the [GitHub guides](https://guides.github.com)
-- Hubspot [`git` and GitHub tutorial](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
-- Plurlsight's [GitHub beginner's guide](https://www.pluralsight.com/blog/software-development/github-tutorial)
-- Code School's [GitHub tutorial](https://www.codeschool.com/courses/mastering-github)
+> ## Where to find more about GitHub
+> To learn more about GitHub you can review one or more of these additional (external) resouces:
+> - GitHub Guide - [Hello World](https://guides.github.com/activities/hello-world/)
+> - All the [GitHub guides](https://guides.github.com)
+> - Hubspot [`git` and GitHub tutorial](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+> - Plurlsight's [GitHub beginner's guide](https://www.pluralsight.com/blog/software-development/github-tutorial)
+> - Code School's [GitHub tutorial](https://www.codeschool.com/courses/mastering-github)
+{: .discussion}
 
-If you would like to learn about source code version control using the `git` software, the `git` in GitHub, please see these resources:
-- Try this 15 minute interactive  [`git` tutorial](https://try.github.io/)
-- Try some additioanl `git` excersizes [here](https://gitexercises.fracz.com)
+> ## More about Git version control
+> If you would like to learn about source code version control using the `git` software, the `git` in GitHub, please see these resources:
+> - Try this 15 minute interactive  [`git` tutorial](https://try.github.io/)
+> - Try some additioanl `git` excersizes [here](https://gitexercises.fracz.com)
+{: .discussion}
