@@ -8,6 +8,7 @@ PARSER=bin/markdown_ast.rb
 DST=_site
 
 SLIDES_DIR=slides
+EPISODES_DIR=_episodes
 REVEAL_PREFIX=../assets/js/reveal.js
 
 # Controls
@@ -66,6 +67,8 @@ RMD_DST = $(patsubst _episodes_rmd/%.Rmd,_episodes/%.md,$(RMD_SRC))
 # Jupyter Notebook files
 IPYNB_SLIDES_SRC = $(wildcard ${SLIDES_DIR}/??*.ipynb)
 IPYNB_SLIDES_DST = $(patsubst ${SLIDES_DIR}/%.ipynb,${SLIDES_DIR}/%.slides.html,$(IPYNB_SLIDES_SRC))
+IPYNB_EPISODES_SRC = $(wildcard _episodes_notebooks/??*.ipynb)
+IPYNB_EPISODES_DST = $(patsubst _episodes_notebooks/%.ipynb,_episodes/%.md,$(IPYNB_EPISODES_SRC))
 
 # Lesson source files in the order they appear in the navigation menu.
 MARKDOWN_SRC = \
@@ -99,6 +102,9 @@ lesson-ipynb : ${IPYNB_SLIDES_DST} ${IPYNB_EPISODES_DST}
 
 %.slides.html : %.ipynb
 	jupyter nbconvert --to=slides --reveal-prefix="${REVEAL_PREFIX}" --output-dir ${SLIDES_DIR} $<
+
+${IPYNB_EPISODES_DST} : ${IPYNB_EPISODES_SRC}
+	jupyter nbconvert --NbConvertApp.output_files_dir=../fig --to=markdown --output-dir _episodes $^
 
 ## lesson-check     : validate lesson Markdown.
 lesson-check :
