@@ -3,7 +3,8 @@ title: "Sharing Jupyter Notebooks using GitHub"
 teaching: 10
 exercises: 15
 questions:
-- "How can you use GitHub for sharing Jupyter notebooks online?"
+- "How can I share my work outside of publishing in a traditional journal?"
+- "How can I use GitHub for sharing Jupyter notebooks online?"
 objectives:
 - "Create a repository on GitHub to share your Jupyter Notebook online."
 - "Describe the features GitHub provides that enhance its utility for online sharing."
@@ -126,7 +127,7 @@ To add our new sample notebook to our GitHub repository, we will return to our r
 > - Drag and drop the sample notebook or click the _choose your files_ link to select the sample notebook.
 >    - We will see any files that we have uploaded at the bottom of the drag and drop area.
 > - Add a message describing the change we are about to make.
->    - Type "Added sample notebook" in the subject field. 
+>    - Type "Adds sample notebook" in the subject field. 
 >    - We can either add the same message below in the extended dwscription or leave it blank.
 > - Click on _Commit changes_ button to complete the uplaod.
 {: .challenge}
@@ -135,7 +136,7 @@ After commiting the change we should see that there are now two files in the rep
 
 ![github-new-file-added.png](../fig/github-new-file-added.png)
 
-We can actually preview the notebook by clicking on it (shown below)
+We can actually preview the notebook by clicking on it (shown below). Note that GitHub will automatically render your notebook so that it's displayed in the browser. This can be a great way to quickly show other people what you've been up to!
 
 ![github-sharing-notebook-preview.png](../fig/github-sharing-notebook-preview.png)
 
