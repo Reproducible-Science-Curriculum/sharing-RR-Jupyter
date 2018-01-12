@@ -21,7 +21,7 @@ keypoints:
 * [Slideshow]({{ page.root }}/slides/02-intro_to_binder.slides.html)
 * Simple sample notebook:
     - [download](../code/hello_world_binder.ipynb)
-    - [on Github]({{ site.repository }}/blob/gh-pages/code/hello_world_binder.ipynb)
+    - [on Github]({{ site.github.repository_url }}/blob/gh-pages/code/hello_world_binder.ipynb)
 * Sample notebook with plotting:
     - [download](../code/plot-gapminder.ipynb)
-    - [on Github]({{ site.repository }}/blob/gh-pages/code/plot-gapminder.ipynb)
+    - [on Github]({{ site.github.repository_url }}/blob/gh-pages/code/plot-gapminder.ipynb)
