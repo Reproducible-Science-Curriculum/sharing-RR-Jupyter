@@ -3,4 +3,4 @@
 # development version - override for local deployment
 
 url: ""
-
+repository: https://github.com/Reproducible-Science-Curriculum/sharing-RR-Jupyter
