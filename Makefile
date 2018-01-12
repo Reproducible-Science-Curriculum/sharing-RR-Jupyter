@@ -7,6 +7,9 @@ JEKYLL=jekyll
 PARSER=bin/markdown_ast.rb
 DST=_site
 
+SLIDES_DIR=slides
+REVEAL_PREFIX=../assets/js/reveal.js
+
 # Controls
 .PHONY : commands clean files
 .NOTPARALLEL:
@@ -54,11 +57,15 @@ workshop-check :
 ## ----------------------------------------
 ## Commands specific to lesson websites.
 
-.PHONY : lesson-check lesson-md lesson-files lesson-fixme
+.PHONY : lesson-check lesson-md lesson-ipynb lesson-files lesson-fixme
 
 # RMarkdown files
 RMD_SRC = $(wildcard _episodes_rmd/??-*.Rmd)
 RMD_DST = $(patsubst _episodes_rmd/%.Rmd,_episodes/%.md,$(RMD_SRC))
+
+# Jupyter Notebook files
+IPYNB_SLIDES_SRC = $(wildcard ${SLIDES_DIR}/??*.ipynb)
+IPYNB_SLIDES_DST = $(patsubst ${SLIDES_DIR}/%.ipynb,${SLIDES_DIR}/%.slides.html,$(IPYNB_SLIDES_SRC))
 
 # Lesson source files in the order they appear in the navigation menu.
 MARKDOWN_SRC = \
@@ -86,6 +93,12 @@ lesson-md : ${RMD_DST}
 # Use of .NOTPARALLEL makes rule execute only once
 ${RMD_DST} : ${RMD_SRC}
 	@bin/knit_lessons.sh ${RMD_SRC}
+
+## lesson-ipynb     : convert Jupyter Notebook episodes and slides
+lesson-ipynb : ${IPYNB_SLIDES_DST} ${IPYNB_EPISODES_DST}
+
+%.slides.html : %.ipynb
+	jupyter nbconvert --to=slides --reveal-prefix="${REVEAL_PREFIX}" --output-dir ${SLIDES_DIR} $<
 
 ## lesson-check     : validate lesson Markdown.
 lesson-check :
