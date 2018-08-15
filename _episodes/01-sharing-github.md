@@ -110,11 +110,11 @@ Before we upload one of our existing files, we will first create a new notebook 
 
 > ## 4.1 Create a new sample notebook
 > - At the Jupyter dashboard, click on _New_ button and select a `Python 3` notebook.
-> - In the first cell of the notebok, type the `Python` atatement:
+> - In the first cell of the notebok, enter the following `Python` statement:
 >
 >        print('hello world')
 >
-> - Run the cell to confim that the `Python` statemnt does not have any bugs.
+> - Run the cell to confim that what you entered is free of syntax and other errors.
 > - Save the notebook as "hello_world_binder.ipynb"
 {: .challenge}
 
@@ -142,7 +142,7 @@ We can actually preview the notebook by clicking on it (shown below). Note that 
 
 ### 5. Upload our previous working notebook to the repository
 
-In anticipation of our next lesson on sharing using the capability of [Binder](https://mybinder.org), we need to upload the notebook that we have bene working on. To do this we will repeat many of the steps above.
+In anticipation of our next lesson on sharing notebooks in a dynamic rather than static way, let's upload the notebook that we have bene working on. To do this we will repeat many of the steps above.
 
 > ## Upload our file:
 > - Return to `sharing-github` repository on GitHub
@@ -168,7 +168,7 @@ After commiting the change we should see that there are now three files in the r
 {: .discussion}
 
 > ## More about Git version control
-> If you would like to learn about source code version control using the `git` software, the `git` in GitHub, please see these resources:
+> If you would like to learn about source code version control using the `git` software, the `Git` in GitHub, please see these resources:
 > - Try this 15 minute interactive  [`git` tutorial](https://try.github.io/)
-> - Try some additioanl `git` excersizes [here](https://gitexercises.fracz.com)
+> - Try some additioanl `git` exercises [here](https://gitexercises.fracz.com)
 {: .discussion}
