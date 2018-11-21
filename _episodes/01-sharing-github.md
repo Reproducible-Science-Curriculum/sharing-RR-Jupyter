@@ -151,7 +151,7 @@ In anticipation of our next lesson on sharing notebooks in a dynamic rather than
 >    - We will see any files that _we_ have uploaded at the bottom of the drag and drop area.
 > - Add a message describing the change we are about to make.
 >    - Typing "Added data analysis notebook" in the subject field. 
->    - We can either add the same message below in the extended dwscription or leave it blank.
+>    - We can either add the same message below in the extended description or leave it blank.
 > - Click on _Commit changes_ button to complete the uplaod.
 >
 {: .challenge}
