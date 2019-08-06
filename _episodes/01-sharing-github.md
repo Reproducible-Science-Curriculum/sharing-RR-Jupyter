@@ -128,7 +128,7 @@ To add our new sample notebook to our GitHub repository, we will return to our r
 >    - We will see any files that we have uploaded at the bottom of the drag and drop area.
 > - Add a message describing the change we are about to make.
 >    - Type "Adds sample notebook" in the subject field. 
->    - We can either add the same message below in the extended dwscription or leave it blank.
+>    - We can either add the same message below in the extended description or leave it blank.
 > - Click on _Commit changes_ button to complete the uplaod.
 {: .challenge}
 
