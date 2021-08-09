@@ -12,5 +12,5 @@ share links to an interactive version of your code using Binder.
 >
 > This lesson requires access to the internet and the ability to create a GitHub account.
 >
-> It also uses the notebook created in an earlier lesson, but there is are sample notebooks that could be downloaded and used instead.
+> It also uses the notebook created in an earlier lesson, but there are sample notebooks that could be downloaded and used instead.
 {: .prereq}
