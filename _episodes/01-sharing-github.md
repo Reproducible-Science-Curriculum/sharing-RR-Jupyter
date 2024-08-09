@@ -36,7 +36,7 @@ To use GitHub one needs to register for a (free) account. To register for a GitH
 
 We should see the the web page below.
 
-**Note**: _If you already have a GitHub account you do __NOT__ need to create a new one. Please [skip down to step 3](#3-create-a-new-reprository)._
+**Note**: _If you already have a GitHub account you do __NOT__ need to create a new one. Please [skip down to step 3](#3-create-a-new-repository)._
 
 ![github-homepage-new-user.png](../fig/github-homepage-new-user.png)
 
@@ -73,7 +73,7 @@ Click _Submit_ to complete our `Github` account setup.
 
 ![github-welcome-step-3.png](../fig/github-welcome-step-3.png)
 
-### 3. Create a new reprository
+### 3. Create a new repository
 
 - Click on _Start a project_ as shown below.
 
